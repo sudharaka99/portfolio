@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    
+    <!-- Neon Accent -->
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FFC4"/>
+      <stop offset="100%" stop-color="#00E5A8"/>
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="neon-glow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)"/>
+
+  <!-- Grid Backdrop -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.15">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="160" y1="0" x2="160" y2="500" />
+    <line x1="320" y1="0" x2="320" y2="500" />
+    <line x1="480" y1="0" x2="480" y2="500" />
+    <line x1="640" y1="0" x2="640" y2="500" />
+  </g>
+
+  <!-- Browser Frame -->
+  <rect x="50" y="50" width="700" height="400" rx="10" fill="#111827" stroke="#1e293b" stroke-width="2" />
+  
+  <!-- Browser Header -->
+  <rect x="50" y="50" width="700" height="40" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+  <circle cx="75" cy="70" r="5" fill="#ef4444" />
+  <circle cx="90" cy="70" r="5" fill="#f59e0b" />
+  <circle cx="105" cy="70" r="5" fill="#10b981" />
+  
+  <!-- Address bar -->
+  <rect x="130" y="60" width="500" height="20" rx="4" fill="#020617" stroke="#1e293b" stroke-width="1" />
+  <text x="140" y="73" fill="#94a3b8" font-family="sans-serif" font-size="9">https://recruithub.sudharaka.dev/interviews/schedule</text>
+
+  <!-- Main Container Layout -->
+  <!-- Left Side: Active Interviews -->
+  <g transform="translate(70, 105)">
+    <rect x="0" y="0" width="280" height="330" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1"/>
+    <text x="15" y="25" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="10.5">ACTIVE ZOOM INTERVIEWS (2)</text>
+    
+    <!-- Interview 1 -->
+    <rect x="15" y="45" width="250" height="120" rx="4" fill="#111827" stroke="#00E5A8" stroke-width="0.5" />
+    <text x="30" y="70" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="bold">Senior Laravel Engineer</text>
+    <text x="30" y="86" fill="#94a3b8" font-family="sans-serif" font-size="8.5">Candidate: Dilshan Silva</text>
+    <text x="30" y="102" fill="#94a3b8" font-family="sans-serif" font-size="8.5">Time: Today, 02:00 PM (15 mins left)</text>
+    
+    <!-- Zoom API join button -->
+    <rect x="30" y="120" width="100" height="22" rx="3" fill="#2D8CFF" />
+    <!-- Camera Icon SVG inline -->
+    <path d="M 37 127 H 45 V 135 H 37 Z M 45 129 L 49 127 V 135 L 45 133 Z" fill="#f8fafc" />
+    <text x="54" y="134" fill="#f8fafc" font-family="sans-serif" font-size="8" font-weight="bold">JOIN ZOOM</text>
+
+    <rect x="140" y="120" width="110" height="22" rx="3" fill="#1e293b" stroke="#334155" />
+    <text x="195" y="134" fill="#94a3b8" font-family="sans-serif" font-size="8" text-anchor="middle">View Resume</text>
+
+    <!-- Interview 2 -->
+    <rect x="15" y="180" width="250" height="120" rx="4" fill="#111827" stroke="#1e293b" stroke-width="0.5" />
+    <text x="30" y="205" fill="#f8fafc" font-family="sans-serif" font-size="10" font-weight="bold">Associate QA Engineer</text>
+    <text x="30" y="221" fill="#94a3b8" font-family="sans-serif" font-size="8.5">Candidate: F. Keshara</text>
+    <text x="30" y="237" fill="#94a3b8" font-family="sans-serif" font-size="8.5">Time: Tomorrow, 10:00 AM</text>
+    
+    <rect x="30" y="255" width="100" height="22" rx="3" fill="#1e293b" stroke="#334155" />
+    <text x="80" y="269" fill="#94a3b8" font-family="sans-serif" font-size="8" text-anchor="middle">Schedule Room</text>
+  </g>
+
+  <!-- Right Side: Smart Resume parser / AI score details -->
+  <g transform="translate(370, 105)">
+    <rect x="0" y="0" width="360" height="330" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1"/>
+    <text x="20" y="25" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="10.5">RESUME KEYWORD ANALYSIS</text>
+    
+    <!-- Dial Gauge for Match Score -->
+    <circle cx="90" cy="110" r="45" fill="none" stroke="#111827" stroke-width="8" />
+    <!-- 85% dash circle -->
+    <circle cx="90" cy="110" r="45" fill="none" stroke="url(#neon)" stroke-dasharray="240" stroke-dashoffset="40" stroke-width="8" filter="url(#neon-glow)" />
+    <text x="90" y="115" fill="#f8fafc" font-family="'Space Mono', monospace" font-size="16" font-weight="bold" text-anchor="middle">85%</text>
+    <text x="90" y="170" fill="#94a3b8" font-family="sans-serif" font-size="8.5" text-anchor="middle">Profile Match Index</text>
+
+    <!-- Key Match Tags List -->
+    <g transform="translate(160, 60)">
+      <rect x="0" y="0" width="70" height="18" rx="3" fill="rgba(0, 229, 168, 0.15)" stroke="#00E5A8" stroke-width="0.5" />
+      <text x="35" y="11" fill="#00FFC4" font-family="sans-serif" font-size="8" text-anchor="middle" font-weight="bold">Laravel</text>
+
+      <rect x="80" y="0" width="70" height="18" rx="3" fill="rgba(0, 229, 168, 0.15)" stroke="#00E5A8" stroke-width="0.5" />
+      <text x="115" y="11" fill="#00FFC4" font-family="sans-serif" font-size="8" text-anchor="middle" font-weight="bold">Vue.js</text>
+
+      <rect x="0" y="25" width="55" height="18" rx="3" fill="rgba(0, 229, 168, 0.15)" stroke="#00E5A8" stroke-width="0.5" />
+      <text x="27.5" y="36" fill="#00FFC4" font-family="sans-serif" font-size="8" text-anchor="middle" font-weight="bold">MySQL</text>
+
+      <rect x="65" y="25" width="85" height="18" rx="3" fill="rgba(0, 229, 168, 0.15)" stroke="#00E5A8" stroke-width="0.5" />
+      <text x="107.5" y="36" fill="#00FFC4" font-family="sans-serif" font-size="8" text-anchor="middle" font-weight="bold">REST APIs</text>
+    </g>
+
+    <!-- Dynamic Learning path box -->
+    <rect x="20" y="195" width="320" height="110" rx="4" fill="#111827" stroke="#1e293b" />
+    <text x="35" y="215" fill="#f8fafc" font-family="sans-serif" font-size="9" font-weight="bold">SUGGESTED PATH MATCHING MISSING SKILLS</text>
+    <line x1="35" y1="222" x2="325" y2="222" stroke="#1e293b" stroke-width="1" />
+    
+    <!-- Bullet suggestions -->
+    <circle cx="45" cy="242" r="2.5" fill="#00FFC4" />
+    <text x="56" y="245" fill="#94a3b8" font-family="sans-serif" font-size="8">Docker Containership (Recommended for Laravel Deployments)</text>
+    
+    <circle cx="45" cy="262" r="2.5" fill="#00FFC4" />
+    <text x="56" y="265" fill="#94a3b8" font-family="sans-serif" font-size="8">TypeScript Strict typing modules (Recommended for Vue.js architecture)</text>
+
+    <circle cx="45" cy="282" r="2.5" fill="#00FFC4" />
+    <text x="56" y="285" fill="#94a3b8" font-family="sans-serif" font-size="8">Redis caching system configurations</text>
+  </g>
+</svg>

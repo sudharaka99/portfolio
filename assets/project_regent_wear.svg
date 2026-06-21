@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    
+    <!-- Neon Accent -->
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FFC4"/>
+      <stop offset="100%" stop-color="#00E5A8"/>
+    </linearGradient>
+
+    <!-- Neon Glow Filter -->
+    <filter id="neon-glow" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)"/>
+
+  <!-- Grid Backdrop -->
+  <g stroke="#1e293b" stroke-width="1" opacity="0.15">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="160" y1="0" x2="160" y2="500" />
+    <line x1="320" y1="0" x2="320" y2="500" />
+    <line x1="480" y1="0" x2="480" y2="500" />
+    <line x1="640" y1="0" x2="640" y2="500" />
+  </g>
+
+  <!-- Browser Frame -->
+  <rect x="50" y="50" width="700" height="400" rx="10" fill="#111827" stroke="#1e293b" stroke-width="2" />
+  
+  <!-- Browser Header -->
+  <rect x="50" y="50" width="700" height="40" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+  <circle cx="75" cy="70" r="5" fill="#ef4444" />
+  <circle cx="90" cy="70" r="5" fill="#f59e0b" />
+  <circle cx="105" cy="70" r="5" fill="#10b981" />
+  
+  <!-- Address bar -->
+  <rect x="130" y="60" width="500" height="20" rx="4" fill="#020617" stroke="#1e293b" stroke-width="1" />
+  <text x="140" y="73" fill="#94a3b8" font-family="sans-serif" font-size="9">https://regentwear.lk/shop/mens-collections</text>
+  
+  <!-- Cart Icon (Glowing) -->
+  <g transform="translate(670, 60)">
+    <path d="M 0 0 L 5 0 L 8 8 L 22 8 L 20 16 L 8 16 Z" fill="none" stroke="#00E5A8" stroke-width="1.5" filter="url(#neon-glow)"/>
+    <circle cx="10" cy="18" r="2.5" fill="#00FFC4" />
+    <circle cx="18" cy="18" r="2.5" fill="#00FFC4" />
+    <!-- Cart Counter badge -->
+    <circle cx="20" cy="3" r="4.5" fill="#ef4444" />
+    <text x="20" y="6" fill="#f8fafc" font-family="sans-serif" font-size="7" font-weight="bold" text-anchor="middle">3</text>
+  </g>
+
+  <!-- Store Layout Content -->
+  <!-- Left Side: Filter Sidebar -->
+  <rect x="65" y="105" width="145" height="330" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
+  <text x="75" y="125" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="10">REFINE SEARCH</text>
+  <line x1="75" y1="135" x2="200" y2="135" stroke="#1e293b" stroke-width="0.5" />
+  
+  <!-- Category Lists -->
+  <text x="75" y="160" fill="#00E5A8" font-family="sans-serif" font-size="9">Categories</text>
+  <text x="85" y="180" fill="#94a3b8" font-family="sans-serif" font-size="8.5">✔ Shirts &amp; Tees</text>
+  <text x="85" y="198" fill="#94a3b8" font-family="sans-serif" font-size="8.5">□ Trousers &amp; Jeans</text>
+  <text x="85" y="216" fill="#94a3b8" font-family="sans-serif" font-size="8.5">□ Jackets &amp; Coats</text>
+  
+  <text x="75" y="245" fill="#00E5A8" font-family="sans-serif" font-size="9">Select Sizes</text>
+  <!-- Size boxes -->
+  <g transform="translate(75, 255)">
+    <rect x="0" y="0" width="20" height="18" rx="2" fill="#1e293b" stroke="#00E5A8" stroke-width="0.5" />
+    <text x="10" y="12" fill="#00FFC4" font-family="sans-serif" font-size="8" text-anchor="middle" font-weight="bold">M</text>
+    
+    <rect x="26" y="0" width="20" height="18" rx="2" fill="#111827" stroke="#1e293b" stroke-width="0.5" />
+    <text x="36" y="12" fill="#94a3b8" font-family="sans-serif" font-size="8" text-anchor="middle">L</text>
+    
+    <rect x="52" y="0" width="20" height="18" rx="2" fill="#111827" stroke="#1e293b" stroke-width="0.5" />
+    <text x="62" y="12" fill="#94a3b8" font-family="sans-serif" font-size="8" text-anchor="middle">XL</text>
+  </g>
+  
+  <text x="75" y="305" fill="#00E5A8" font-family="sans-serif" font-size="9">Price Interval</text>
+  <line x1="75" y1="325" x2="200" y2="325" stroke="#1e293b" stroke-width="2" />
+  <circle cx="120" cy="325" r="4" fill="#00E5A8" filter="url(#neon-glow)" />
+  <circle cx="180" cy="325" r="4" fill="#00E5A8" filter="url(#neon-glow)" />
+  <text x="75" y="345" fill="#94a3b8" font-family="sans-serif" font-size="8">LKR 1,500 - LKR 5,000</text>
+
+  <!-- Right Side: Store Grid -->
+  <g transform="translate(225, 105)">
+    <!-- Item 1 Card -->
+    <rect x="0" y="0" width="160" height="205" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
+    <!-- Thumbnail Place holder -->
+    <rect x="8" y="8" width="144" height="100" rx="4" fill="#111827" stroke="#1e293b" />
+    <path d="M 50 58 L 70 38 L 80 48 L 110 18 L 110 58 Z" fill="none" stroke="#1e293b" stroke-width="1.5" />
+    <circle cx="65" cy="30" r="4" fill="none" stroke="#1e293b" stroke-width="1.5" />
+    <!-- T-Shirt Silhouette visual -->
+    <path d="M 60 40 L 70 40 L 72 50 L 78 50 L 80 40 L 90 40 L 96 55 L 86 58 L 86 95 L 64 95 L 64 58 L 54 55 Z" fill="#1e293b" opacity="0.6"/>
+
+    <text x="12" y="125" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="9.5">Premium Smart Polo</text>
+    <text x="12" y="142" fill="#00E5A8" font-family="'Space Mono', monospace" font-size="9" font-weight="bold">Rs. 3,250.00</text>
+    <!-- Add Cart Button -->
+    <rect x="12" y="165" width="136" height="28" rx="4" fill="rgba(0, 229, 168, 0.15)" stroke="#00E5A8" stroke-width="0.5" />
+    <text x="80" y="182" fill="#00FFC4" font-family="sans-serif" font-size="9" text-anchor="middle" font-weight="bold">ADD TO CART</text>
+
+    <!-- Item 2 Card -->
+    <rect x="175" y="0" width="160" height="205" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
+    <rect x="8" y="8" width="144" height="100" rx="4" fill="#111827" stroke="#1e293b" />
+    <!-- T-Shirt 2 -->
+    <path d="M 60 40 L 70 40 L 72 50 L 78 50 L 80 40 L 90 40 L 96 55 L 86 58 L 86 95 L 64 95 L 64 58 L 54 55 Z" fill="#1e293b" opacity="0.6"/>
+    
+    <text x="12" y="125" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="9.5">Cotton Slim Fit Crew</text>
+    <text x="12" y="142" fill="#f8fafc" font-family="'Space Mono', monospace" font-size="9">Rs. 2,100.00</text>
+    <rect x="12" y="165" width="136" height="28" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.5" />
+    <text x="80" y="182" fill="#94a3b8" font-family="sans-serif" font-size="9" text-anchor="middle">ADD TO CART</text>
+
+    <!-- Item 3 Card -->
+    <rect x="350" y="0" width="150" height="205" rx="6" fill="#0b0f19" stroke="#1e293b" stroke-width="1" />
+    <rect x="8" y="8" width="134" height="100" rx="4" fill="#111827" stroke="#1e293b" />
+    <path d="M 60 40 L 70 40 L 72 50 L 78 50 L 80 40 L 90 40 L 96 55 L 86 58 L 86 95 L 64 95 L 64 58 L 54 55 Z" fill="#1e293b" opacity="0.6"/>
+    
+    <text x="12" y="125" fill="#f8fafc" font-family="sans-serif" font-weight="bold" font-size="9.5">Regent Casual V-Neck</text>
+    <text x="12" y="142" fill="#f8fafc" font-family="'Space Mono', monospace" font-size="9">Rs. 1,850.00</text>
+    <rect x="12" y="165" width="126" height="28" rx="4" fill="#1e293b" stroke="#334155" stroke-width="0.5" />
+    <text x="75" y="182" fill="#94a3b8" font-family="sans-serif" font-size="9" text-anchor="middle">ADD TO CART</text>
+
+    <!-- Grid Page bar -->
+    <g transform="translate(180, 240)" fill="none" stroke="#1e293b" stroke-width="1">
+      <rect x="0" y="0" width="24" height="20" rx="3" fill="#1e293b" stroke="#00E5A8" stroke-width="0.5"/>
+      <text x="12" y="13" fill="#00FFC4" font-family="sans-serif" font-size="9" font-weight="bold" text-anchor="middle">1</text>
+      
+      <rect x="28" y="0" width="24" height="20" rx="3" fill="#0b0f19" />
+      <text x="40" y="13" fill="#94a3b8" font-family="sans-serif" font-size="9" text-anchor="middle">2</text>
+      
+      <rect x="56" y="0" width="24" height="20" rx="3" fill="#0b0f19" />
+      <text x="68" y="13" fill="#94a3b8" font-family="sans-serif" font-size="9" text-anchor="middle">3</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of JRS Sudharaka, Associate Software Engineer & Full Stack Developer from Sri Lanka specializing in Laravel, .NET, Vue.js, MySQL, and SQLite.">
+    <meta name="keywords"
+        content="JRS Sudharaka, Software Engineer, Full Stack Developer, System Architect, Sri Lanka, Laravel, .NET, Vue.js, WPF, MySQL, SQLite, Serving Cloud">
+    <meta name="author" content="JRS Sudharaka">
+    <link rel="canonical" href="https://sudharaka.dev" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sudharaka.dev">
+    <meta property="og:title" content="JRS Sudharaka | Associate Software Engineer">
+    <meta property="og:description"
+        content="Portfolio of JRS Sudharaka, Associate Software Engineer & Full Stack Developer from Sri Lanka. I build scalable web applications, desktop software, POS systems, and enterprise management platforms.">
+    <meta property="og:image" content="assets/portfolio_preview.svg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sudharaka.dev">
+    <meta property="twitter:title" content="JRS Sudharaka | Associate Software Engineer">
+    <meta property="twitter:description"
+        content="Portfolio of JRS Sudharaka, Associate Software Engineer & Full Stack Developer from Sri Lanka. Laravel | .NET | Vue.js | MySQL | SQLite.">
+    <meta property="twitter:image" content="assets/portfolio_preview.svg">
+
+    <title>JRS Sudharaka | Associate Software Engineer & Full Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Space+Mono&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Floating Particles Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <a href="#" class="logo" id="logo-nav">
+                <span class="neon-text">JRS</span>Sudharaka
+            </a>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link active-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="assets/JRS_Sudharaka_CV.pdf" download class="btn-download-cv nav-btn"
+                        id="btn-nav-download">
+                        <i class="fa-solid fa-cloud-arrow-down"></i> CV
+                    </a>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-grid container">
+                <div class="hero-content">
+                    <span class="hero-intro">Hi, I'm</span>
+                    <h1 class="hero-title" id="hero-main-title">JRS Sudharaka</h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typing-text"
+                            data-words='["Associate Software Engineer", "Full Stack Developer", "System Architect"]'></span><span
+                            class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Associate Software Engineer from Sri Lanka. I build scalable web applications, desktop software,
+                        POS systems, and enterprise management platforms.
+                    </p>
+
+                    <div class="tech-badges-hero">
+                        <span class="tech-badge"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                        <span class="tech-badge"><i class="fa-solid fa-code"></i> .NET</span>
+                        <span class="tech-badge"><i class="fa-brands fa-vuejs"></i> Vue.js</span>
+                        <span class="tech-badge"><i class="fa-solid fa-database"></i> MySQL</span>
+                        <span class="tech-badge"><i class="fa-solid fa-database"></i> SQLite</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="assets/JRS_Sudharaka_CV.pdf" download class="btn btn-primary" id="btn-hero-cv">
+                            <i class="fa-solid fa-download"></i> Download CV
+                        </a>
+                        <a href="#projects" class="btn btn-secondary" id="btn-hero-projects">
+                            <i class="fa-solid fa-briefcase"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-outline" id="btn-hero-contact">
+                            <i class="fa-solid fa-paper-plane"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="glass-terminal animate-glow">
+                        <div class="terminal-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="terminal-title">jrs-sudharaka.json</span>
+                        </div>
+                        <div class="terminal-body">
+                            <pre><code><span class="code-keyword">const</span> developer = {
+  name: <span class="code-string">"JRS Sudharaka"</span>,
+  title: <span class="code-string">"Associate Software Engineer"</span>,
+  location: <span class="code-string">"Colombo, Sri Lanka"</span>,
+  experience: <span class="code-string">"Serving Cloud Pvt Ltd"</span>,
+  skills: [
+    <span class="code-string">"Laravel"</span>, <span class="code-string">"Vue.js"</span>, <span class="code-string">".NET"</span>, 
+    <span class="code-string">"MySQL"</span>, <span class="code-string">"WPF"</span>, <span class="code-string">"SQLite"</span>
+  ],
+  passion: <span class="code-string">"Building Scalable Solutions"</span>
+};
+
+<span class="code-comment">// Recruiter alert</span>
+<span class="code-keyword">if</span> (developer.skills.includes(<span class="code-string">"Laravel"</span>)) {
+  console.log(<span class="code-string">"Hire JRS Sudharaka!"</span>);
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll down">
+                    <span class="mouse-icon">
+                        <span class="mouse-wheel"></span>
+                    </span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-section scroll-reveal" id="about">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="subtitle-tag">01. Background</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-content">
+                        <p class="about-lead">
+                            I'm an Associate Software Engineer with experience in Laravel, Vue.js, .NET, WPF, MySQL and
+                            SQLite.
+                        </p>
+                        <p class="about-text">
+                            I specialize in building scalable web applications, desktop POS systems, inventory
+                            management platforms, Role-Based Access Control (RBAC) solutions, and API-driven
+                            applications.
+                        </p>
+                        <p class="about-text">
+                            Currently, I am working at <strong>Serving Cloud Pvt Ltd</strong>, where I develop
+                            enterprise-level tools and consumer-facing web architectures that optimize workflow
+                            efficiency and data integrity.
+                        </p>
+
+                        <div class="about-info-list">
+                            <div class="info-item">
+                                <span class="info-label">Company:</span>
+                                <span class="info-val">Serving Cloud Pvt Ltd</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Location:</span>
+                                <span class="info-val">Colombo, Sri Lanka</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Education:</span>
+                                <span class="info-val">University of Moratuwa</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Freelance:</span>
+                                <span class="info-val">Available</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-visual">
+                        <div class="glass-photo-wrapper">
+                            <div class="glass-photo-frame">
+                                <img src="assets/avatar.svg" alt="JRS Sudharaka Professional Avatar"
+                                    class="about-avatar" id="avatar-img">
+                            </div>
+                            <div class="glass-photo-backdrop"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stats Counters Section -->
+                <div class="stats-container" id="stats">
+                    <div class="stat-card glassmorphism scroll-reveal">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                        <div class="stat-num" data-target="3">0</div>
+                        <p class="stat-label">Years Learning & Dev</p>
+                    </div>
+
+                    <div class="stat-card glassmorphism scroll-reveal">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <div class="stat-num" data-target="5">0</div>
+                        <p class="stat-label">Major Projects</p>
+                    </div>
+
+                    <div class="stat-card glassmorphism scroll-reveal">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div class="stat-num" data-target="10">0</div>
+                        <p class="stat-label">Technologies Mastered</p>
+                    </div>
+
+                    <div class="stat-card glassmorphism scroll-reveal">
+                        <div class="stat-icon-wrapper">
+                            <i class="fa-solid fa-keyboard"></i>
+                        </div>
+                        <div class="stat-num" data-target="1000">0</div>
+                        <p class="stat-label">Hours of Coding</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section scroll-reveal" id="skills">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="subtitle-tag">02. Expertise</span>
+                    <h2 class="section-title">My Skills</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-tabs">
+                    <button class="tab-btn active" data-tab="backend" id="tab-btn-backend">Backend</button>
+                    <button class="tab-btn" data-tab="frontend" id="tab-btn-frontend">Frontend</button>
+                    <button class="tab-btn" data-tab="desktop" id="tab-btn-desktop">Desktop</button>
+                    <button class="tab-btn" data-tab="database" id="tab-btn-database">Database</button>
+                    <button class="tab-btn" data-tab="tools" id="tab-btn-tools">Tools</button>
+                </div>
+
+                <div class="skills-content-container">
+                    <!-- Backend Tab -->
+                    <div class="skills-tab-content active" id="backend">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-laravel skill-icon"></i>
+                                        Laravel</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-php skill-icon"></i> PHP</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-leaf skill-icon"></i> Spring
+                                        Boot</span>
+                                    <span class="skill-pct">75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-java skill-icon"></i> Java</span>
+                                    <span class="skill-pct">75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-network-wired skill-icon"></i> REST
+                                        APIs</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Frontend Tab -->
+                    <div class="skills-tab-content" id="frontend">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-vuejs skill-icon"></i> Vue.js</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-react skill-icon"></i> React</span>
+                                    <span class="skill-pct">75%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-bootstrap skill-icon"></i>
+                                        Bootstrap</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-html5 skill-icon"></i> HTML5 &
+                                        CSS3</span>
+                                    <span class="skill-pct">95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="95%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-js skill-icon"></i>
+                                        JavaScript</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-rotate-left skill-icon"></i>
+                                        AJAX</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Desktop Tab -->
+                    <div class="skills-tab-content" id="desktop">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-hashtag skill-icon"></i> C#</span>
+                                    <span class="skill-pct">80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-window-restore skill-icon"></i>
+                                        WPF</span>
+                                    <span class="skill-pct">80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="80%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-cube skill-icon"></i> .NET 8</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Tab -->
+                    <div class="skills-tab-content" id="database">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-database skill-icon"></i>
+                                        MySQL</span>
+                                    <span class="skill-pct">85%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="85%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-database skill-icon"></i>
+                                        SQLite</span>
+                                    <span class="skill-pct">80%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools Tab -->
+                    <div class="skills-tab-content" id="tools">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-git-alt skill-icon"></i> Git</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-brands fa-github skill-icon"></i>
+                                        GitHub</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="90%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-file-code skill-icon"></i> VS
+                                        Code</span>
+                                    <span class="skill-pct">95%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="95%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span class="skill-name"><i class="fa-solid fa-laptop-code skill-icon"></i> Visual
+                                        Studio</span>
+                                    <span class="skill-pct">90%</span>
+                                </div>
+                                <div class="skill-bar-bg">
+                                    <div class="skill-bar-fill" data-width="90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section class="experience-section scroll-reveal" id="experience">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="subtitle-tag">03. Career</span>
+                    <h2 class="section-title">Work Experience</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="timeline">
+                    <!-- Timeline Item 1 -->
+                    <div class="timeline-item left scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025 September – Present</div>
+                        <div class="timeline-content glassmorphism">
+                            <h3 class="timeline-title">Associate Software Engineer</h3>
+                            <h4 class="timeline-company"><i class="fa-solid fa-building"></i> Serving Cloud Pvt Ltd</h4>
+                            <ul class="timeline-details">
+                                <li>Architecting and building dynamic, scalable systems using <strong>Laravel
+                                        MVC</strong> architecture.</li>
+                                <li>Designing secure, structured, and fast <strong>REST APIs</strong> for web and mobile
+                                    clients.</li>
+                                <li>Optimizing <strong>MySQL database</strong> queries, creating indexes, and tuning
+                                    performance for massive transactions.</li>
+                                <li>Implementing robust <strong>Role-Based Access Control (RBAC)</strong> models to
+                                    secure sensitive administration endpoints.</li>
+                                <li>Conducting comprehensive security implementations including encryption, SQL
+                                    injection protection, and JWT security keys.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="timeline-item right scroll-reveal">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025 April – September</div>
+                        <div class="timeline-content glassmorphism">
+                            <h3 class="timeline-title">Intern Software Engineer</h3>
+                            <h4 class="timeline-company"><i class="fa-solid fa-building"></i> Serving Cloud Pvt Ltd</h4>
+                            <ul class="timeline-details">
+                                <li>Collaborated on building modular core PHP applications, rewriting legacy functions
+                                    for better readability.</li>
+                                <li>Designed and integrated interactive interface components using
+                                    <strong>Vue.js</strong> for live data updates.</li>
+                                <li>Maintained responsive mobile layouts using <strong>Bootstrap UI</strong> CSS
+                                    framework components.</li>
+                                <li>Maintained version control using Git, cooperating on pull requests, review cycles,
+                                    and team deployments.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="projects-section scroll-reveal" id="projects">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="subtitle-tag">04. Works</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Project Category Filters -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all" id="filter-btn-all">All Projects</button>
+                    <button class="filter-btn" data-filter="web" id="filter-btn-web">Web Apps</button>
+                    <button class="filter-btn" data-filter="desktop" id="filter-btn-desktop">Desktop POS</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1: WEFORCE POS System -->
+                    <div class="project-card glassmorphism scroll-reveal" data-category="desktop"
+                        data-project-id="weforce-pos">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project_weforce_pos.svg" alt="WEFORCE POS System Mockup"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <span class="btn-view-details">Explore System <i
+                                        class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-tag"><i class="fa-solid fa-desktop"></i> Desktop POS</span>
+                            </div>
+                            <h3 class="project-title">WEFORCE POS System</h3>
+                            <p class="project-desc">
+                                Offline-first point-of-sale desktop system built with .NET 8 and WPF. Features thermal
+                                printing, batch tracking, and local SQLite data syncing.
+                            </p>
+                            <div class="project-tech-list">
+                                <span>WPF</span>
+                                <span>.NET 8</span>
+                                <span>SQLite</span>
+                                <span>ESC/POS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Agency Stock & Retail -->
+                    <div class="project-card glassmorphism scroll-reveal" data-category="web"
+                        data-project-id="agency-stock">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project_agency_stock.svg" alt="Agency Stock & Retail Management Mockup"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <span class="btn-view-details">Explore System <i
+                                        class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-tag"><i class="fa-solid fa-globe"></i> Web System</span>
+                            </div>
+                            <h3 class="project-title">Agency Stock & Retail</h3>
+                            <p class="project-desc">
+                                Enterprise distribution and inventory dashboard built with Laravel, Vue.js, and MySQL.
+                                Manages stock paths and dynamic product discounts.
+                            </p>
+                            <div class="project-tech-list">
+                                <span>Laravel</span>
+                                <span>Vue.js</span>
+                                <span>MySQL</span>
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Regent Wear E-Commerce -->
+                    <div class="project-card glassmorphism scroll-reveal" data-category="web"
+                        data-project-id="regent-wear">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project_regent_wear.svg" alt="Regent Wear E-Commerce Mockup"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <span class="btn-view-details">Explore System <i
+                                        class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-tag"><i class="fa-solid fa-cart-shopping"></i> E-Commerce</span>
+                            </div>
+                            <h3 class="project-title">Regent Wear E-Commerce</h3>
+                            <p class="project-desc">
+                                Feature-rich fashion store with advanced admin dashboard, item search filters, user
+                                checkout gates, and automated catalog tracking.
+                            </p>
+                            <div class="project-tech-list">
+                                <span>Laravel</span>
+                                <span>Vue.js</span>
+                                <span>MySQL</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Homoeopathic Medical Platform -->
+                    <div class="project-card glassmorphism scroll-reveal" data-category="web"
+                        data-project-id="homoeopathic-medical">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project_homoeopathic.svg" alt="Homoeopathic Medical Platform Mockup"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <span class="btn-view-details">Explore System <i
+                                        class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-tag"><i class="fa-solid fa-heart-pulse"></i> Healthcare</span>
+                            </div>
+                            <h3 class="project-title">Homoeopathic Medical Platform</h3>
+                            <p class="project-desc">
+                                Online patient appointment, electronic health records management (EHR), RBAC login, and
+                                digital prescription issuance dashboard.
+                            </p>
+                            <div class="project-tech-list">
+                                <span>Laravel</span>
+                                <span>Vue.js</span>
+                                <span>MySQL</span>
+                                <span>RBAC</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Job Finder & Interview System -->
+                    <div class="project-card glassmorphism scroll-reveal" data-category="web"
+                        data-project-id="job-finder">
+                        <div class="project-img-wrapper">
+                            <img src="assets/project_job_finder.svg" alt="Job Finder & Interview Management Mockup"
+                                class="project-img">
+                            <div class="project-overlay">
+                                <span class="btn-view-details">Explore System <i
+                                        class="fa-solid fa-arrow-right-long"></i></span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-tag"><i class="fa-solid fa-users-viewfinder"></i>
+                                    Recruitment</span>
+                            </div>
+                            <h3 class="project-title">Job Finder & Interview Hub</h3>
+                            <p class="project-desc">
+                                Recruitment system providing automated AI-based resume parsing, Zoom API interview
+                                rooms, and dynamic learning roadmap guides.
+                            </p>
+                            <div class="project-tech-list">
+                                <span>PHP</span>
+                                <span>Vue.js</span>
+                                <span>Zoom API</span>
+                                <span>AI Matching</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-section scroll-reveal" id="education">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="subtitle-tag">05. Academics</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="education-grid">
+                    <!-- Education 1 -->
+                    <div class="education-card glassmorphism scroll-reveal">
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3 class="edu-degree">Bachelor of Information Technology (External)</h3>
+                        <h4 class="edu-school"><i class="fa-solid fa-university"></i> University of Moratuwa</h4>
+                        <p class="edu-desc">Highly structured computing degree emphasizing algorithms, database design,
+                            software engineering methodologies, and network architecture.</p>
+                    </div>
+
+                    <!-- Education 2 -->
+                    <div class="education-card glassmorphism scroll-reveal">
+                        <div class="edu-icon"><i class="fa-solid fa-award"></i></div>
+                        <h3 class="edu-degree">Higher National Diploma in IT</h3>
+                        <h4 class="edu-school"><i class="fa-solid fa-university"></i> University of Moratuwa</h4>
+                        <p class="edu-desc">Deep-dive technical program focused on application development, web
+                            development technologies, system analysis, and project operations management.</p>
+                    </div>
+
+                    <!-- Education 3 -->
+                    <div class="education-card glassmorphism scroll-reveal">
+                        <div class="edu-icon"><i class="fa-solid fa-certificate"></i></div>
+                        <h3 class="edu-degree">Diploma in IT</h3>
+                        <h4 class="edu-school"><i class="fa-solid fa-university"></i> University of Moratuwa</h4>
+                        <p class="edu-desc">Core foundation program in programming principles (OOP, C++, Java), database
+                            queries, and introductory system architecture principles.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section scroll-reveal" id="contact">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="subtitle-tag">06. Connect</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="">
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h3 class="contact-subtitle">Let's build something epic</h3>
+                        <p class="contact-lead-text">
+                            Whether you have an opening at your firm, a complex system that needs building, or a query
+                            about database tuning, I'm always open to discussing tech opportunities!
+                        </p>
+
+                        <div class="contact-cards">
+                            <div class="contact-item-card glassmorphism">
+                                <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="contact-card-content">
+                                    <span class="card-label">Email Me</span>
+                                    <a href="mailto:jrssudharaka@gmail.com"
+                                        class="card-value">jrssudharaka@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item-card glassmorphism">
+                                <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="contact-card-content">
+                                    <span class="card-label">Call / WhatsApp</span>
+                                    <a href="tel:0715691384" class="card-value">0715691384</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item-card glassmorphism">
+                                <div class="contact-card-icon"><i class="fa-brands fa-github"></i></div>
+                                <div class="contact-card-content">
+                                    <span class="card-label">GitHub Repository</span>
+                                    <a href="https://github.com/sudharaka99" target="_blank" rel="noopener"
+                                        class="card-value">github.com/sudharaka99</a>
+                                </div>
+                            </div>
+
+                            <div class="contact-item-card glassmorphism">
+                                <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="contact-card-content">
+                                    <span class="card-label">Location</span>
+                                    <span class="card-value">Colombo, Sri Lanka</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form
+                    <div class="contact-form-wrapper glassmorphism">
+                        <form id="contact-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required autocomplete="name">
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required autocomplete="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone" class="form-label">Phone (Optional)</label>
+                                    <input type="tel" id="phone" name="phone" class="form-input" placeholder="07XXXXXXXX" autocomplete="tel">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Partnership" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-input" placeholder="Briefly describe your project details..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full" id="btn-submit-contact">
+                                <span id="btn-text">Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#" class="logo footer-logo" id="logo-footer">
+                <span class="neon-text">JRS</span>Sudharaka
+            </a>
+
+            <p class="footer-desc">
+                Designed & Built with absolute precision. High performance backend engines and glowing frontend cards.
+            </p>
+
+            <div class="footer-socials">
+                <a href="https://github.com/sudharaka99" target="_blank" rel="noopener" aria-label="GitHub"><i
+                        class="fa-brands fa-github"></i></a>
+                <a href="mailto:jrssudharaka@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:0715691384" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 JRS Sudharaka. All rights reserved.</p>
+                <a href="#" class="back-to-top" id="back-to-top" aria-label="Back to top">
+                    Back to Top <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Details Modal (Hidden by Default) -->
+    <div class="project-modal" id="project-modal" aria-hidden="true" role="dialog">
+        <div class="modal-backdrop" id="modal-close-backdrop"></div>
+        <div class="modal-content glassmorphism">
+            <button class="modal-close" id="modal-close-btn" aria-label="Close details">&times;</button>
+            <div class="modal-body" id="modal-body-content">
+                <!-- Content Injected via JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Status Popup Notification -->
+    <div class="status-notification" id="status-notification">
+        <div class="notification-icon" id="notification-icon"><i class="fa-solid fa-check"></i></div>
+        <div class="notification-text">
+            <h4 id="notification-title">Success!</h4>
+            <p id="notification-desc">Your message has been sent successfully.</p>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
